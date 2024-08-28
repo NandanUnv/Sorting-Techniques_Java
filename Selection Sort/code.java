@@ -19,10 +19,11 @@ public class Main {
           
         }
         
-        int tp = a[i];
-        a[i] = a[min];
-        a[min] = tp;
-        
+        if(min!=i){
+          int tp = a[i];
+          a[i] = a[min];
+          a[min] = tp;
+        }
       }
       
       for (int k: a){
