@@ -6,17 +6,13 @@ public class Main {
       
       int a[] = {20,200,400,300,10,5,500,25};
       
-      
       for(int i=0; i<a.length; i++){
         
         int min = i;
-        
         for(int j=i+1; j<a.length; j++){
-          
           if(a[min]>a[j]){
             min = j;
           }
-          
         }
         
         if(min!=i){
@@ -25,7 +21,6 @@ public class Main {
           a[min] = tp;
         }
       }
-      
       for (int k: a){
         System.out.print(k+" ");
       } 
