@@ -11,19 +11,16 @@ public class Main {
         
         int min = i;
         
-        int min_v = a[i];
-        
         for(int j=i+1; j<a.length; j++){
           
           if(a[min]>a[j]){
             min = j;
-            min_v = a[j];
           }
           
         }
         
         int tp = a[i];
-        a[i] = min_v;
+        a[i] = a[min];
         a[min] = tp;
         
       }
